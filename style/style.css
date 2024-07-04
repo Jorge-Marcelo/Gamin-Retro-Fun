@@ -1,0 +1,217 @@
+/*
+Autor: Jorge Marcelo
+Data de Criação: 10/07/2023
+Github: https://github.com/Jorge-Marcelo
+Linkedin: https://www.linkedin.com/in/jorge-marcelo-067a5017b/
+*/ 
+
+/*Google Fonts*/
+/*Fonte: Agdasima*/
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@700&display=swap');
+
+
+:root{
+--main-color: #ff0000;
+--text-color: #00a2ff;
+--bg-color: #FFF;
+--container-color: #121213;
+--title-color: #8c00ff;
+--price-color: rgb(89, 0, 255);
+--border-color: #0400ff;
+--secondary-color: #01034e;
+--cart-colo: #480170;
+}
+
+/*Configutações padrão*/
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/*cores, posicionamento e background*/
+body{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background-image: url("../assets/img/Background.jpg");
+
+}
+
+
+.logo-img{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+
+
+/*Configuração de textos*/
+h1{
+font-family: 'Agdasima', sans-serif;
+color: #FFF;
+text-align: center;
+font-size: 2.5rem;
+}
+
+h2{
+font-family: 'Agdasima', sans-serif;
+font-weight: 900;
+font-size: 2rem;
+text-align: center;
+color: white;
+margin-top: 20px;
+}
+
+/*Label do formulario*/
+label{
+font-family: 'Agdasima', sans-serif;
+font-weight: 900;
+font-size: 1.6rem;
+color: white;
+margin: 5px;
+}
+
+/*Container da pagina*/
+.container{
+overflow: hidden;
+}
+
+form{
+background-color: var(--container-color);
+padding: 20px;
+border: 3px solid var(--title-color);
+border-radius: 20px;
+width: 400px;
+}
+
+/*Container do formulario*/
+.container form {
+padding: 10px 40px;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+/*SEssão para cada label e input do formulario*/
+section{
+position: relative;
+width: 100%;
+}
+
+/*Inputs do formulario*/
+input{
+position: relative;
+width: 100%;
+padding: 5px 5px 5px;
+background: transparent;
+outline: none;
+border-radius: 10px;
+border: 3px solid var(--title-color);
+color: white;
+font-size: 1.1rem;
+}
+
+/*Classes especiais para validação*/
+input.error.active{
+border: 3px solid var(--main-color);
+}
+
+span.error.active{
+color: var(--main-color);
+font-family: 'Agdasima', sans-serif;
+font-weight: 900;
+font-size: 1.2rem;
+}
+
+
+/*Botão do formulario*/
+button{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 10px  0 0;
+height: 40px;
+border-radius: 10px;
+text-align: center;
+color: var(--text-color);
+border: 3px solid var(--border-color);
+background: transparent;
+font-size: 1.7rem;
+font-family: 'Kanit', sans-serif;
+font-weight: 900;
+cursor: pointer;
+width: 100%;
+
+}
+
+button:hover{
+background-color: var(--title-color);
+transition: 0.7s;
+color: #ffffff;
+font-weight: 900;
+border: 3px solid var(--bg-color);
+}
+
+footer {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-size: 1.7rem;
+margin-top: 10px;
+}
+
+.footer-title{
+font-size: 1.7xrem;
+color: var(--title-color);
+font-weight: 600;
+margin: 5px;
+font-family: Agdasima;
+
+}
+
+/*Classes de redes sociais*/
+.social {
+background: transparent;
+border: 2px solid var(--title-color);
+background-color: transparent;
+transition: transform 0.3s ease-in-out;
+border-radius: 100%;
+margin: 0 7px;
+width: 50px;
+height: 50px;
+cursor: pointer;
+}
+
+.social:hover {
+border: 2px solid var(--bg-color);
+background-color: var(--title-color);
+transition: all 1s ease-in;
+transform: rotateY(360deg);
+}
+
+
+@media(max-width: 420px){
+form{
+width: 350px;
+}
+}
+
+@media(max-width: 380px){
+form{
+width: 310px;
+}
+}
+
+@media(max-width: 350px){
+form{
+width: 300px;
+}
+}
